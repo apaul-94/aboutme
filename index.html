@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- for google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alkatra&family=Edu+NSW+ACT+Foundation:wght@500&family=IBM+Plex+Sans&family=Lobster&family=Roboto+Slab&family=Roboto:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CDN path -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!-- Jquery for sliding image -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <!-- JS for sliding image -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <!-- Popper js for nav bar -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+
+    <!-- This is for bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+
+
+    <!-- for scroll animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- external css files -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="education.css">
+
+
+    <style>
+        #projects-title-pro {
+            color: whitesmoke;
+            font-family: 'Roboto Slab', serif;
+            font-size: 20px;
+            border-left: 4px solid rgb(28, 139, 214);
+        }
+
+        #after-myproject-about {
+            color: whitesmoke;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        #web-dev {
+            color: whitesmoke;
+            font-family: 'Roboto Slab', serif;
+            font-size: 25px;
+            border-left: 4px solid whitesmoke;
+        }
+
+        #after-myproject-about {
+            color: whitesmoke;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            text-align: justify;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: #1b1f24;">
+
+    <!-- For navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: whitesmoke;">
+        <a class="navbar-brand" href="/index.html" style="padding-left: 10px; font-family: 'Alkatra', cursive;">
+            <img src="/images/nav-bar-icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            MY PORTFOLIO
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            style="margin-right: 10px;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/education.html"
+                        style="padding-left: 10px; font-family: 'Roboto', sans-serif; font-style: italic;">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/skills.html"
+                        style="padding-left: 10px; font-family: 'Roboto', sans-serif; font-style: italic;">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/projects.html"
+                        style="padding-left: 10px; font-family: 'Roboto', sans-serif; font-style: italic;">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html"
+                        style="padding-left: 10px; font-family: 'Roboto', sans-serif; font-style: italic;">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- The header image section -->
+    <div class="container">
+        <div class="row row-cols-1">
+            <div class="col-lg py-5 px-5">
+                <img src="/images/header-image.jpg" alt="" class="img-fluid" style="border-radius: 250px;"
+                    id="floating">
+            </div>
+            <div class="col-lg py-5" id="all-about-first">
+                <div class="row" id="hello" style="display: inline;">Hello,<span
+                        style="color:rgb(28, 221, 28);">it's</span>Me</div>
+
+                <div class="row" id="arun">Arun Paul</div>
+
+                <div class="row" id="andim" style="display: inline;">And I'm a<span style="color:rgb(48, 138, 228);"
+                        class="text-primary">Web Developer</span></div>
+
+                <div class="row py-2" id="about">I am a professional web developer and i give my best on my work based
+                    on my coding skills. I have done many projects which are linked below on this site. Right now, i am
+                    working on some projects using HTML, CSS, BOOTSTRAP and JS. My each project has its own speciality.
+                </div>
+
+                <div class="row py-2" id="about">As a web developer, my primary goal is to craft seamless and visually
+                    stunning digital experiences that leave a lasting impression on users. Whether it's building
+                    responsive websites that adapt flawlessly to any device or developing powerful web applications with
+                    intuitive interfaces, I relish every opportunity to push the boundaries of what's possible in the
+                    virtual realm.
+                </div>
+                <br>
+                <div class="row text-secondary" id="my-education-title">Follow Me On:</div>
+
+                <div class="row row-cols-3" id="skill-text">
+                    <div class="col text-center text-white">
+                        <img src="images/facebook-icon.png" alt="arun paul" style="width: 60px;"> FaceBook
+                    </div>
+                    <div class="col text-center text-white">
+                        <img src="images/insta-icon.png" alt="arun paul" style="width: 60px;"> Instagram
+                    </div>
+                    <div class="col text-center text-white">
+                        <img src="images/linkedin-icon.png" alt="arun paul" style="width: 60px;"> LinkedIn
+                    </div>
+                </div>
+                <br>
+                <div class="row text-secondary" id="my-education-title">Download My CV....</div>
+                <div class="row py-3" id="button-resume">
+                    <div class="col">
+                        <button class="btn btn-primary btn" onclick="resume()" style="margin-left: -12px;">Click Here <i
+                                class="bi bi-download"></i></button>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About myself -->
+    <div class="container">
+        <div class="row">
+            <div class="col text-center" id="my-education-title">About Myself</div>
+        </div>
+    </div>
+    <br>
+    <div class="container" id="index-about-con">
+
+        <div class="row" id="index-about-row1">
+            <div class="col text-center border border-secondary p-2 m-1">Web Dev</div>
+            <div class="col text-center border border-secondary p-2 m-1">Educator</div>
+            <div class="col text-center border border-secondary p-2 m-1">Blogger</div>
+            <div class="col text-center border border-secondary p-2 m-1">Explorer</div>
+        </div>
+
+        <div class="row row-cols-1">
+
+            <div class="col-md p-5">
+                <img src="images/index-about-img.jpeg" alt="arun-paul" class="w-100 img-thumbnail"
+                    style="filter: grayscale(1);">
+            </div>
+
+            <div class="col-md p-5">
+                <div class="row bg-secondary p-2" id="explore-me">&#9996; Explore me</div>
+                <br>
+                <div class="row" id="my-name-is">My name is Arun Paul and I am a Front End Developer based in Siliguri,
+                    West Bengal. I am very passionate and dedicated to works. In the fast-paced world of web
+                    development, I am stands out as a dynamic and forward-thinking Front-End Developer.</div>
+                <div class="row h4">&#128154; &#128154; &#128154; &#128154; &#128154;</div>
+                <br>
+                <div class="row p-3 border border-primary" id="all-in-one">
+                    <div class="row" id="index-about-details">Name: Arun Paul</div>
+                    <div class="row" id="index-about-details">Father's Name: Ashutosh Paul</div>
+                    <div class="row" id="index-about-details">DOB: 11th Sep, 1994</div>
+                    <div class="row" id="index-about-details">Age: 28</div>
+                    <div class="row" id="index-about-details">Home: Matigara, Siliguri, 734010.</div>
+                    <div class="row" id="index-about-details">State: West Bengal</div>
+                    <div class="row" id="index-about-details">Phone No: +91 7602220806</div>
+                    <div class="row" id="index-about-details">Email Id: palark030@gmsil.com</div>
+                    <span id="index-about-whatsapp">
+                        <a href="https://wa.me/+917602220806" target="blank" class="btn btn-success">
+                            <i class="bi bi-whatsapp"></i> Whats App
+                        </a>
+                    </span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="index-about-row3">
+            <div class="col text-center bg-secondary border border-white p-2 m-1">
+                <i class="bi bi-journal-album h1"></i><br>
+                10+<br>Completed Projects
+            </div>
+            <div class="col text-center bg-secondary border border-white p-2 m-1">
+                <i class="bi bi-code-square h1"></i><br>
+                1M<br>Line of Codes
+            </div>
+            <div class="col text-center bg-secondary border border-white p-2 m-1">
+                <i class="bi bi-person-bounding-box h1"></i><br>
+                5+<br>Satisfied Customer
+            </div>
+            <div class="col text-center bg-secondary border border-white p-2 m-1">
+                <i class="bi bi-star-half h1"></i><br>
+                Learning<br>New Things
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <!-- My gallery section -->
+    <div class="container">
+
+        <div class="row row-cols-1">
+
+            <div class="col-lg-5 text-center">
+                <p id="my-education-title">Gallery</p>
+                <p id="gallery-text">Joining the workforce was a significant milestone in my life. From my first day at
+                    the office to the present, each step has been a learning experience that has shaped my professional
+                    growth. Through hard work and dedication, I have been fortunate to work on diverse projects with
+                    amazing teams. Witness the transformation from a novice to a seasoned professional in this journey
+                    of perseverance and passion.<br><br>
+                    Traveling has been my escape from the daily routine, a way to unwind, and an opportunity to explore
+                    the world's wonders. In this collection, you'll find snapshots of breathtaking landscapes, vibrant
+                    cityscapes, and heartwarming encounters with people from different cultures. From serene beaches to
+                    majestic mountains, every journey has left an indelible mark on my soul.
+                    <br><br>
+                    Life isn't just about work and adventure; it's also about building meaningful connections. In this
+                    section, I've included photos with colleagues, friends, and loved ones. These memories capture the
+                    laughter, celebrations, and shared experiences that have made life truly fulfilling. Together, we've
+                    celebrated successes, overcome challenges, and created bonds that will last a lifetime.
+                </p>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="row row-cols-2">
+                    <div class="col p-1">
+                        <img src="images/gal 1.jpg" alt="" class="w-100" data-aos="zoom-in">
+                    </div>
+                    <div class="col p-1">
+                        <img src="images/gal 2.jpg" alt="" class="w-100" data-aos="zoom-in">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col p-1">
+                        <img src="images/gal 4.jpg" alt="" class="w-100" data-aos="zoom-in">
+                    </div>
+                    <div class="col p-1">
+                        <img src="images/gal 6.jpg" alt="" class="w-100" data-aos="zoom-in">
+                    </div>
+                    <div class="col p-1">
+                        <img src="images/gal 7.jpg" alt="" class="w-100" data-aos="zoom-in">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col p-1">
+                        <img src="images/gal 3.jpg" alt="" class="w-100" data-aos="zoom-in">
+                    </div>
+                    <div class="col p-1">
+                        <img src="images/gal 8.jpg" alt="" class="w-100" data-aos="zoom-in">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- My education Section -->
+    <div class="container">
+        <div class="row">
+            <div class="col text-center" id="my-education-title">My Qualification</div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="row row-cols-2 p-1">
+
+            <div class="col-xl text-center p-2">
+                <div class="row edu-border p-3 m-1" data-aos="fade-down">
+                    <i class="bi bi-mortarboard-fill edu-cap text-success"></i>
+                    <p id="btech" class="bg-secondary p-2 my-2">1. B-Tech</p>
+                    <p id="branch">Branch: Electronics & Comm. Engg.</p>
+                    <p id="from">From: Jalpaiguri Govt. Engg. College</p>
+                    <p id="session">Session: 2017 to 2020</p>
+                    <p id="session">&#11088; &#11088; &#11088; &#11088;</p>
+                </div>
+
+            </div>
+            <div class="col-xl text-center  p-2">
+                <div class="row edu-border p-3 m-1 " data-aos="fade-up">
+                    <i class="bi bi-mortarboard-fill edu-cap text-success"></i>
+                    <p id="btech" class="bg-secondary p-2 my-2">2. Diploma</p>
+                    <p id="branch">Branch: Electronics & Tele-Comm. Engg.</p>
+                    <p id="from">From: Siliguri Govt. Polytechnic</p>
+                    <p id="session">Session: 2014 to 2017</p>
+                    <p id="session">&#11088; &#11088; &#11088; &#11088; &#11088;</p>
+                </div>
+            </div>
+            <div class="col-xl text-center p-2">
+                <div class="row edu-border p-3 m-1" data-aos="fade-down">
+                    <i class="bi bi-mortarboard-fill edu-cap text-success"></i>
+                    <p id="btech" class="bg-secondary p-2 my-2">3. H.S. & 10th</p>
+                    <p id="branch">Branch: Science</p>
+                    <p id="from">From: Matigara Harasundar H.S. School</p>
+                    <p id="session">Session: 2009 to 2013</p>
+                    <p id="session">&#11088; &#11088; &#11088; &#11088; &#11088;</p>
+                </div>
+
+            </div>
+            <div class="col-xl text-center p-2">
+                <div class="row edu-border p-3 m-1" data-aos="fade-up">
+                    <i class="bi bi-mortarboard-fill edu-cap text-success"></i>
+                    <p id="btech" class="bg-secondary p-2 my-2">4. Computer Course</p>
+                    <p id="branch">Branch: Computer Application</p>
+                    <p id="from">From: DIVT</p>
+                    <p id="session">Session: 2015 to 2016</p>
+                    <p id="session">&#11088; &#11088; &#11088; &#11088; &#11088;</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+
+    <!-- My Skills section -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col text-center" id="my-education-title">Skills, that i have....</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row row-cols-1">
+
+            <div class="col-lg">
+                <div class="row px-3 py-1 bg-primary" id="web-dev">Web Development</div>
+                <div class="row px-3 py-3" id="after-myproject-about">
+                    &#128311; &#128311; &#128311; Just before one year, i started learning about HTML, CSS, BOOTSTRAP,
+                    JavaScript and MySQL and browse on youtube and google to learn about web development. Thanks to
+                    W3school, codewithharry, yahoobaba youtube channel for teach me these skills.
+                </div>
+                <div class="row bg-secondary p-2" id="skills-sub-title">Languages</div>
+                <div class="row" id="skill-text">
+                    <div class="col text-center text-white border border-secondary m-2" data-aos="zoom-in">
+                        <img src="images/html-icon.png" alt="arun-paul" class="w-50">HTML
+                    </div>
+                    <div class="col text-center text-white border border-secondary m-2" data-aos="zoom-in">
+                        <img src="images/css-icon.png" alt="arun-paul" class="w-50">CSS
+                    </div>
+                    <div class="col text-center text-white border border-secondary m-2" data-aos="zoom-in">
+                        <img src="images/js-icon.png" alt="arun-paul" class="w-50">JS
+                    </div>
+                </div>
+                <div class="row" id="skill-text">
+                    <div class="col text-center text-white border border-secondary m-2" data-aos="zoom-in">
+                        <img src="images/python-icon.png" alt="arun-paul" class="w-50">Python
+                    </div>
+                    <div class="col text-center text-white border border-secondary m-2" data-aos="zoom-in">
+                        <img src="images/php-icon.png" alt="arun-paul" class="w-50"> PHP
+                    </div>
+                    <div class="col text-center text-white border border-secondary m-2" data-aos="zoom-in">
+                        <img src="images/c++-icon.png" alt="arun-paul" class="w-50"> C++
+                    </div>
+                </div>
+                <div class="row bg-secondary p-2" id="skills-sub-title">Frameworks</div>
+                <div class="row" id="skill-text">
+                    <div class="col text-center text-white border border-secondary m-2" data-aos="zoom-in">
+                        <img src="images/bootstrap-icon.png" alt="arun-paul" class="w-50">BS
+                    </div>
+                    <div class="col text-center text-white border border-secondary m-2" data-aos="zoom-in">
+                        <img src="images/material-icon.png" alt="arun-paul" class="w-50"> M-UI
+                    </div>
+                    <div class="col text-center text-white border border-secondary m-2" data-aos="zoom-in">
+                        <img src="images/wordpress-icon.png" alt="arun-paul" class="w-50"> WP
+                    </div>
+                </div>
+                <div class="row bg-secondary p-2" id="skills-sub-title">Softwares & DataBase</div>
+                <div class="row" id="skill-text">
+                    <div class="col text-center text-white border border-secondary m-2" data-aos="zoom-in">
+                        <img src="images/vscode-icon.png" alt="arun-paul" class="w-50"> VS-C
+                    </div>
+                    <div class="col text-center text-white border border-secondary m-2" data-aos="zoom-in">
+                        <img src="images/sublim-icon.png" alt="arun-paul" class="w-50"> SL
+                    </div>
+                    <div class="col text-center text-white border border-secondary m-2" data-aos="zoom-in">
+                        <img src="images/mysql-icon.png" alt="arun-paul" class="w-50"> MYSQL
+                    </div>
+                </div>
+                <div class="row bg-secondary p-2" id="skills-sub-title">Hosting & Design</div>
+                <div class="row" id="skill-text">
+                    <div class="col text-center text-white border border-secondary m-2" data-aos="zoom-in">
+                        <img src="images/github-icon.png" alt="arun-paul" class="w-50"> github
+                    </div>
+                    <div class="col text-center text-white border border-secondary m-2" data-aos="zoom-in">
+                        <img src="images/godaddy-icon.png" alt="arun-paul" class="w-50"> gd
+                    </div>
+                    <div class="col text-center text-white border border-secondary m-2" data-aos="zoom-in">
+                        <img src="images/canva-icon.png" alt="arun-paul" class="w-50"> Canva
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg">
+                <br><br>
+                <div class="row">
+                    <div class="col p-1">
+                        <img src="images/cer-1.jpg" alt="arun paul" class="w-100"
+                            style="position: relative; top: 5px; left: 20px; z-index: 1; border: 5px solid rgb(138, 144, 138); transform: rotate(10deg);"
+                            data-aos="fade-down">
+                    </div>
+                    <div class="col p-1">
+                        <img src="images/cer-7.jpg" alt="arun paul" class="w-100"
+                            style="position: relative; top: 20px; right: 20px; z-index: 2; border: 5px solid rgb(138, 144, 138); transform: rotate(-10deg);"
+                            data-aos="fade-up">
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col p-1">
+                        <img src="images/cer-4.png" alt="arun paul" class="w-100"
+                            style="position: relative; top: -50px; left: 70px; z-index: 3; border: 5px solid rgb(138, 144, 138);"
+                            data-aos="fade-down">
+                    </div>
+                    <div class="col p-1">
+                        <img src="images/cer-2.jpg" alt="arun paul" class="w-100"
+                            style="position: relative; top: 20px; right: 35px; z-index: 4; border: 5px solid rgb(138, 144, 138); transform: rotate(10deg);"
+                            data-aos="fade-up">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col p-1">
+                        <img src="images/cer-6.jpg" alt="arun paul" class="w-100"
+                            style="position: relative; top: -50px; left: 30px; z-index: 5; border: 5px solid rgb(138, 144, 138); transform: rotate(20deg);"
+                            data-aos="fade-down">
+                    </div>
+                    <div class="col p-1">
+                        <img src="images/cer-5.png" alt="arun paul" class="w-100"
+                            style="position: relative; top: 27px; right: 25px; z-index: 6; border: 5px solid rgb(138, 144, 138); transform: rotate(-15deg);"
+                            data-aos="fade-up">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br><br>
+    <br>
+    
+    <!-- my project section -->
+    <div class="container">
+
+        <div class="row">
+            <p class="text-center" id="my-education-title">Featured Projects</p>
+        </div>
+
+        <div class="row row-cols-1">
+
+            <div class="col-lg">
+                <div class="row px-3 py-3 bg-secondary mx-1" id="projects-title-pro">&#127744; Portfolio</div>
+
+                <div class="row px-3 py-3">
+                    <img src="images/project-1.jpg" alt="" class="img-fluid border-primary rounded-top rounded-bottom"
+                        style="border-top: 5px solid; border-bottom: 5px solid;">
+                </div>
+
+                <div class="row px-3 py-2" id="projects-about">
+                    &#11088; &#11088; &#11088; This is my first portfolio site which is fully responsive. It is made by using HTML, CSS, JS and Bootstrap Framework.
+                </div>
+
+                <div class="row px-2 py-3">
+                    <div class="col-6">
+                        <a href="https://arunpaul.in" class="btn btn-primary btn-lg" target="_blank"><i
+                                class="bi bi-box-arrow-up-right" target="_blank"></i> Live</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg">
+                <div class="row px-3 py-3 bg-secondary mx-1" id="projects-title-pro">&#127744; Business Site</div>
+
+                <div class="row px-3 py-3">
+                    <img src="images/project-2.jpg" alt="" class="img-fluid border-primary rounded-top rounded-bottom"
+                        style="border-top: 5px solid; border-bottom: 5px solid;">
+                </div>
+
+                <div class="row px-3 py-2" id="projects-about">
+                    &#11088; &#11088; &#11088; My first order which i get from one of my client. This site is also fully responsive and made for the purpose of business.
+                </div>
+
+                <div class="row px-2 py-3">
+                    <div class="col-6">
+                        <a href="https://apoilengineers.co.in" class="btn btn-primary btn-lg" target="_blank"><i
+                                class="bi bi-box-arrow-up-right"></i> Live</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg">
+                <div class="row px-3 py-3 bg-secondary mx-1" id="projects-title-pro">&#127744; Pottery site</div>
+
+                <div class="row px-3 py-3">
+                    <img src="images/project-3.jpg" alt="" class="img-fluid border-primary rounded-top rounded-bottom"
+                        style="border-top: 5px solid; border-bottom: 5px solid;">
+                </div>
+
+                <div class="row px-3 py-2" id="projects-about">
+                    &#11088; &#11088; &#11088; For our family business, i created this site. And this is my 3rd project
+                    (Fully Responsive). 
+                </div>
+
+                <div class="row px-2 py-3">
+                    <div class="col-6">
+                        <a href="https://bbp-matigara.netlify.app" class="btn btn-primary btn-lg" target="_blank"><i
+                                class="bi bi-box-arrow-up-right"></i> Live</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row px-3 py-3" id="after-myproject-about">
+            &#128311; &#128311; &#128311; These websites are made by myself. All of these are made by using HTML, CSS,
+            JS, BOOTSTRAP, Jquery and these sites takes not more than 5 days to complete. I fully satisfied on my work
+            and i give my best. Before these sites, i was made many website but they are not responsive. So, after HTML,
+            CSS and JS, i learned about bootstrap and using this css framework i built these sites. In future, i will
+            made many more websites and give my 100% on my work. Recently, i am working on a Cake Website. After
+            completion the work, the site will definitly replicated on this portfolio. Thanx.
+        </div>
+
+    </div>
+
+    <!-- contact form section -->
+    <div class="container">
+        <div class="row row-cols-1">
+
+            <div class="col-md py-3">
+                <div class="row">
+                    <p class="text-center" id="whatsapp-me"><i class="bi bi-whatsapp"
+                            style="color: rgb(39, 201, 39);"></i> Whatsapp Me</p>
+                </div>
+                <div class="row">
+                    <form action="">
+                        <input type="text" name="name" id="full-name" placeholder="Your Name" class="px-2">
+                        <br>
+                        <input type="email" name="name" id="email-id" placeholder="Your Email" class="px-2 my-1">
+                        <br>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"
+                            class="px-2"></textarea>
+                        <br>
+                        <input type="submit" value="Send" class="btn btn-primary btn-lg my-2" onclick="whatsapp()">
+
+                        <input type="reset" value="Reset" class="btn btn-primary btn-lg my-2 mx-2">
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-md py-3">
+                <div class="row">
+                    <p class="text-center" id="whatsapp-me"><i class="bi bi-clipboard-data"></i> My Field of Interest:
+                    </p>
+                </div>
+                <div class="row px-2 mx-1 py-1 my-1 bg-success" id="interests"
+                    style="border-left: 2px solid whitesmoke;">
+                    Web Development
+                </div>
+                <div class="row px-2 mx-1 py-1 my-1 bg-success" id="interests"
+                    style="border-left: 2px solid whitesmoke;">
+                    Arduino Programming
+                </div>
+                <div class="row px-2 mx-1 py-1 my-1 bg-success" id="interests"
+                    style="border-left: 2px solid whitesmoke;">
+                    Robotics
+                </div>
+                <div class="row px-2 mx-1 py-1 my-1 bg-success" id="interests"
+                    style="border-left: 2px solid whitesmoke;">
+                    Electronics
+                </div>
+                <div class="row px-2 mx-1 py-1 my-1 bg-success" id="interests"
+                    style="border-left: 2px solid whitesmoke;">
+                    Teaching
+                </div>
+                <div class="row px-2 mx-1 py-1 my-1 bg-success" id="interests"
+                    style="border-left: 2px solid whitesmoke;">
+                    Technical Things
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <div class="container-fluid" id="footer">
+        <div class="row row-cols-1">
+
+            <div class="col-md">
+                <p id="about-me-footer" class="py-3">About Me</p>
+                <p id="footer-about">I won't stop until I succeed. Every day I grind! I'm the architect of my life; I
+                    build its foundation and choose its contents.</p>
+                <p id="footer-social-logos">
+                    <a href="https://www.facebook.com/profile.php?id=100005144882718" style="color: whitesmoke"><i
+                            class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/arunpaul5477/" style="color: whitesmoke"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/arun-paul-b2a743258/" style="color: whitesmoke"><i
+                            class="bi bi-linkedin"></i></a>
+
+                </p>
+            </div>
+
+            <div class="col-md">
+                <p id="about-me-footer" class="py-3">Nevigation</p>
+                <div class="row py-1" id="nevigation-ankers">
+                    <a href="/index.html"><i class="bi  bi-caret-right-fill"></i> Home</a>
+                </div>
+                <div class="row py-1" id="nevigation-ankers">
+                    <a href="/education.html"><i class="bi  bi-caret-right-fill"></i> Education</a>
+                </div>
+                <div class="row py-1" id="nevigation-ankers">
+                    <a href="/skills.html"><i class="bi  bi-caret-right-fill"></i> Skills</a>
+                </div>
+                <div class="row py-1" id="nevigation-ankers">
+                    <a href="/projects.html"><i class="bi  bi-caret-right-fill"></i> Projects</a>
+                </div>
+                <div class="row py-1" id="nevigation-ankers">
+                    <a href="/about.html"><i class="bi  bi-caret-right-fill"></i> About</a>
+                </div>
+            </div>
+
+            <div class="col-md">
+                <p id="about-me-footer" class="py-3">Contact Me</p>
+                <p id="navigation-direct-links"><i class="bi bi-geo-alt-fill"></i> Vill: Matigara Govt. Colony, P.O.
+                    Matigara, P.S. Matigara, Dist: Darjeeling, PIN: 734010.</p>
+                <a href="https://wa.me/+917602220806"
+                    style="color: whitesmoke; text-decoration: none; font-size: 16px;"><i class="bi bi-whatsapp"></i>
+                    +91 7602220806</a><br>
+
+                <a href="tel:+917431002209" style="color: whitesmoke; text-decoration: none; font-size: 16px;"><i
+                        class="bi bi-telephone-fill"></i> +91 7431002209</a><br>
+
+                <a href="mailto: palark030@gmail.com"
+                    style="color: whitesmoke; text-decoration: none; font-size: 16px;"><i
+                        class="bi bi-envelope-fill"></i> palark030@gmail.com</a>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center py-2 my-3" id="copyright-section">&#169; Copyright 2023, &#128153; Arun Paul.
+            </div>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-success"><i
+            class="bi bi-chevron-double-up"></i></button>
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // for scroll animation
+        AOS.init();
+
+        // for resume
+        function resume() {
+            window.open("https://drive.google.com/file/d/13AksRQa4Sx_S0yxA4_xYbC4CcKpUQvCn/view?usp=share_link")
+        }
+
+        // text me section
+        function textme() {
+            var url_text = "https://wa.me/+917602220806"
+
+            window.open(url_text, "_blank");
+        }
+
+        // for whatsapp message
+        function whatsapp() {
+            var name = document.getElementById("full-name").value;
+            var message = document.getElementById("message").value;
+            var email = document.getElementById("email-id").value;
+
+            var url = "https://wa.me/+917602220806?text="
+
+                + "Name: " + name + "%0a"
+                + "Email Id: " + email + "%0a"
+                + "Message: " + message + "%0a"
+
+
+            window.open(url, "_blank");
+        }
+
+        // for skills page
+        function skills() {
+            window.open("/skills.html", "_self")
+        }
+
+        // for education page
+        function education() {
+            window.open("/education.html", "_self")
+        }
+
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <!-- for ionicons icons -->
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+</body>
+
+</html>

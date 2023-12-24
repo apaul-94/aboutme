@@ -1,0 +1,102 @@
+#about-myself-title {
+    color: whitesmoke;
+    font-family: 'Alkatra', cursive;
+    font-size: 25px;
+}
+
+#about-myself-title::first-letter {
+    font-size: 40px;
+    color: rgb(28, 221, 28);
+}
+
+
+#about-image {
+    padding: 0px 100px 20px 100px;
+}
+
+#about-image img {
+    border: 3px solid whitesmoke;
+    display: block;
+}
+
+#hi-everyone {
+    color: whitesmoke;
+    font-size: 25px;
+    font-family: 'Alkatra', cursive;
+}
+
+#about-text {
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    font-style: italic;
+    padding: 0px 20px 20px 20px;
+}
+
+
+/* Scrolling animation of hi everyone section */
+#hi-everyone{
+    opacity: 0;
+    animation-name: fade_in_hieveryone;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade_in_hieveryone {
+    from {
+        opacity: 0;
+        transform: translateZ(-100px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+#about-text {
+    opacity: 0;
+    animation-name: fade_in_hieveryone_text;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade_in_hieveryone_text {
+    from {
+        opacity: 0;
+        transform: translateY(100px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* my interest section */
+#my-interest{
+    color: whitesmoke;
+    font-size: 25px;
+    font-family: 'Alkatra', cursive;
+}
+
+#my-interest::first-letter{
+    font-size: 40px;
+    color: darkgray;
+}
+#interests{
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* personal info section */
+#personal-info-text{
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-align: justify;
+}

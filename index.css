@@ -1,0 +1,318 @@
+/* Header section */
+#all-about-first{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+#hello {
+    color: whitesmoke;
+    font-family: 'Alkatra', cursive;
+    font-size: 25px;
+}
+
+#arun {
+    color: rgb(28, 221, 28);
+    font-family: 'Alkatra', cursive;
+    font-size: 50px;
+}
+
+#andim {
+    color: whitesmoke;
+    font-family: 'Alkatra', cursive;
+    font-size: 25px;
+}
+
+#about {
+    color: whitesmoke;
+    font-size: 15px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+#social-logos {
+    color: whitesmoke;
+    font-size: 35px;
+    display: inline;
+}
+
+#floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+/* index about section */
+#index-about-con{
+    background-color: rgba(46, 175, 204, 0.2);
+}
+
+#index-about-row1{
+    background-color: rgb(228, 223, 223);
+    font-family: 'Roboto Slab', serif;
+    padding: 2px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#explore-me{
+    font-family: 'Roboto Slab', serif;
+    color: whitesmoke;
+    font-size: 20px;
+    border-left: 6px solid rgb(38, 93, 234);
+}
+
+#my-name-is{
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+    font-style: italic;
+    font-size: 15px;
+}
+
+#index-about-details{
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+    font-style: italic;
+    font-size: 15px;
+}
+
+#index-about-whatsapp{
+    margin-left: -15px;
+    margin-top: 15px;
+    font-family: 'Alkatra', cursive;
+    font-size: 30px;
+}
+
+#index-about-row3{
+    font-family: 'Roboto Slab', serif;
+    padding: 2px;
+    font-size: 18px;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+
+#gal-sub{
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+    font-style: italic;
+    font-size: 17px;
+    font-weight: bold; 
+    text-align: left;
+}
+
+#gallery-text{
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+    font-style: italic;
+    font-size: 15px;
+    text-align: justify;
+    padding: 5px;
+}
+
+/* My education section */
+#my-education-title {
+    color: whitesmoke;
+    font-family: 'Alkatra', cursive;
+    font-size: 25px;
+}
+
+#my-education-title::first-letter {
+    font-size: 40px;
+    color: rgb(28, 221, 28);
+}
+
+.edu-border{
+    border: 1px solid whitesmoke;
+}
+
+.edu-cap{
+    font-size: 40px;
+}
+
+#btech {
+    color: whitesmoke;
+    font-family: 'Roboto Slab', serif;
+    font-size: 17px;
+    margin: 0px;
+    border-left: 3px solid whitesmoke;
+    border-right: 3px solid whitesmoke;
+}
+
+#btech::first-letter {
+    font-size: 17px;
+    color: rgb(28, 221, 28);
+}
+
+#branch {
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin: 0px;
+    font-style: italic;
+}
+
+#from {
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    margin: 0px;
+    font-style: italic;
+}
+
+#session {
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    font-style: italic;
+}
+
+/* Skills section */
+
+#skill-text{
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    
+}
+
+#skills-sub-title{
+    color: whitesmoke;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    
+
+}
+
+#languages {
+    color: whitesmoke;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    border-left: 4px solid;
+}
+
+#skills-title {
+    color: whitesmoke;
+    font-family: 'Roboto Slab', serif;
+    font-size: 19px;
+    background-color: rgba(46, 175, 204, 0.2);
+}
+
+
+/* my projects section */
+#projects-title {
+    color: rgb(185, 177, 177);
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    border-left: 4px solid rgb(28, 139, 214);
+}
+
+#projects-about {
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    font-style: italic;
+}
+
+/* Footer section */
+#footer{
+    background-color: rgba(46, 175, 204, 0.5);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#about-me-footer{
+    color: whitesmoke;
+    font-family: 'Alkatra', cursive;
+    font-size: 25px;
+    border-bottom: 2px solid whitesmoke;
+}
+#footer-about{
+    color: whitesmoke;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    text-align: justify;
+}
+#footer-social-logos{
+    font-size: 30px;
+}
+
+#navigation-direct-links{
+    color: whitesmoke;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+}
+
+#nevigation-ankers a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+}
+
+#copyright-section{
+    background-color: whitesmoke;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+}
+
+/* contact form css */
+#whatsapp-me{
+    color: whitesmoke;
+    font-family: 'Alkatra', cursive;
+    font-size: 25px;
+}
+
+#full-name, #email-id{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    background-color: whitesmoke;
+    border: none;
+}
+
+#message{
+    width: 100%;
+    height: 200px;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    background-color: whitesmoke;
+    border: none;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+

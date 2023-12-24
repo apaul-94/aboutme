@@ -1,0 +1,20 @@
+#qualifications{
+    color:darkgray;
+    font-size: 25px;
+    font-family: 'Roboto Slab', serif;
+    border-left: 2px solid rgb(53, 146, 233);
+    margin-bottom: 20px;
+}
+#degree-title{
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#branch-edu, #from-edu, #session-edu, #stars-edu{
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+}
+    
